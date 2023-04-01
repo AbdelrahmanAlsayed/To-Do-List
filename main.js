@@ -35,6 +35,7 @@ isEditedTask = false;
 let todoS = JSON.parse(localStorage.getItem("todo-list"));
 
 taskSubmit.addEventListener("click", function () {
+    taskSubmit.value = "Add Task";
     let userTask = taskInput.value.trim();
     if (taskInput.value != "" && userTask) { // i added userTask to make the input not spaces
     
@@ -112,6 +113,7 @@ function updateStatus(selectedTask) {
 };
 
 function editTask(taskId, taskName) {
+    taskSubmit.value = "Update Task";
     edited = taskId;
     isEditedTask = true;
     taskInput.value = taskName;
@@ -119,6 +121,7 @@ function editTask(taskId, taskName) {
 };
 
 function deleteTask(selectedTask) {
+    taskSubmit.value = "Add Task";
     //removing selected task from array/todoS
     todoS.splice(selectedTask, 1)
     localStorage.setItem("todo-list", JSON.stringify(todoS));
@@ -126,7 +129,7 @@ function deleteTask(selectedTask) {
 };
 
 clearAllButton.addEventListener("click", function () {
-    if (taskBox.children.length > 1 && taskBox.lastElementChild != "span") {
+    if (taskBox.querySelector("div")) {
         if (confirm("Are you sure you wanna delete all tasks ? ")) {
             // //removing all items from array/todoS
             todoS.splice(0 , todoS.length )
