@@ -1,4 +1,3 @@
-"# To-Do-List" 
 To Do web app has the following features :
 
 - Customizable color scheme: Users can choose from four different color options to customize the appearance of the website. These settings are saved to local storage, so the user's preferred color scheme persists across browser sessions.
