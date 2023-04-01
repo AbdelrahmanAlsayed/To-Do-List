@@ -7,6 +7,6 @@ To Do web app has the following features :
 
 - Task management: Users can edit, delete, and mark tasks as complete or pending. 
 
-Clearing tasks: Users can delete all tasks at once by clicking a "Clear All" button. This functionality is implemented using a separate button.
+- Clearing tasks: Users can delete all tasks at once by clicking a "Clear All" button. This functionality is implemented using a separate button.
 
-### live demo : https://abdelrahmanalsayed.github.io/To-Do-List-App-with-JavaScript/
+#### live demo : https://abdelrahmanalsayed.github.io/To-Do-List-App-with-JavaScript/
