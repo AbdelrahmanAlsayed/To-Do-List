@@ -1,0 +1,368 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+    width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+    width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+    width: 1170px;
+    }
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(36, 23, 34, 0.767);
+}
+
+header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(49, 36, 44);
+}
+
+header .logo {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+
+header ul li {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #f5f5dc;
+    margin: 0 20px;
+}
+
+header ul li:first-child {
+    background-color: rgb(110, 139, 143);
+}
+
+header ul li:nth-child(2) {
+    background-color: rgb(57, 92, 86)
+}
+
+header ul li:nth-child(3) {
+    background-color: rgb(140, 134, 104);
+}
+
+header ul li:last-child {
+    background-color: rgb(179, 160, 123);
+}
+
+section {
+    position: relative;
+    height: calc(100vh - 80px);
+    color: white;
+    text-align: center;
+}
+
+section .div1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #31242c;
+}
+
+section .div1 .box1 {
+    width: 310px;
+    height: 220px;
+    border: 1px solid rgb(49, 36, 44);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    z-index: -1;
+}
+
+section .div1 .box1 span {
+    padding-bottom: 10px;
+}
+
+section .div1 .box2 {
+    width: 500px;
+    height: 380px;
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+section .div1 .box2 h1 {
+    font-size: 105px;
+    z-index: 3;
+}
+
+section .last {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: none;
+    max-width: 100%;
+}
+
+section .last h3 {
+    text-align: start;
+}
+
+section .form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+section .form i {
+    font-size: 20px;
+    color: #7d7d7d  ;
+    z-index: 1;
+    position: absolute;
+    left: 12px;
+    top: 15px;
+}
+
+section .form .input {
+    max-width: 100%;
+    background-color: #f5f5dc;
+    border: 2px solid #f5f5dc;
+    padding: 15px;
+    padding-left: 38px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+section .form .input:focus {
+    outline: none;
+    box-shadow: 1px 1px 6px #f5f5dc;
+}
+
+section .form .input::placeholder {
+    color: #7d7d7d;
+}
+
+section .form .add {
+    position: relative;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 13px;
+    color: white;
+    border: 2px solid #f5f5dc;
+    font-size: 16px;
+}
+
+section .form .add:hover {
+    box-shadow: 2px 2px 10px #f5f5dc;
+}
+
+section .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid  rgb(49, 36, 44);
+    width: 100%;
+}
+
+section .controls .filters {
+    display: flex;
+    gap: 20px;
+}
+
+section .controls .filters span {
+    cursor: pointer;
+    font-size: 17px;
+    color: #f5f5dc;
+}
+
+section .controls .filters span.active {
+    color: red;
+}
+
+section .controls .clear-btn {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    outline: none;
+    border: 2px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+section .controls .clear-btn:hover {
+    box-shadow: 2px 2px 10px red;
+}
+
+section .task-box {
+    width: 100%;
+}
+
+section .task-box .tasks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    box-shadow: 3px 3px 18px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid rgb(49, 36, 44);
+    max-width: 100%;
+}
+
+section .task-box .tasks .div11 label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+    background-color: #f5f5dc;
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+input[type="checkbox"]::before {
+    position: absolute;
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 12px;
+    color: black;
+    display: none;
+}
+
+input[type="checkbox"]:checked::before {
+    display: block;
+}
+
+section .task-box .tasks .div11 label p {
+    flex: 1;
+    padding-left: 10px;
+    font-size: 18px;
+    max-width: 100%;
+    word-break: break-all;
+}
+
+section .task-box .tasks .div11 label .checked {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+section .task-box .tasks .div22 i {
+    cursor: pointer;
+    color: black;
+    padding: 8px;
+    margin-left: 2px;
+    font-size: 20px;
+    transition: .2s; 
+} 
+
+section .task-box .tasks .div22 i:hover {
+    transform: scale(1.4);
+}
+
+section .task-box span {
+    font-style: italic;
+}
+
+
+@media (max-width: 540px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 0;
+    }
+    header .logo {
+        padding-top: 10px;
+    }
+    header ul {
+        padding-left: 0;
+    }
+    header ul li {
+        height: 20px;
+        width: 20px;
+        margin: 0 15px;
+    }
+    section {
+        height: calc(100vh - 130px);
+    }
+    section .div1 .box1 {
+        width: 200px;
+        height: 100px;
+    }
+    section .div1 .box1 span{
+        font-size: 14px;
+    }
+    section .div1 .box2 {
+        width: 300px;
+        height: 240px;
+        top: -70%;
+    }
+    section .div1 .box2 h1 {
+        font-size: 62px;
+    }
+    section .form .add {
+        padding: 15px 5px;
+        color: white;
+        border: 2px solid #f5f5dc;
+        font-size: 12px;
+    }
+    
+    section .form .add:hover {
+        box-shadow: 2px 2px 10px #f5f5dc;
+    }
+    section .controls .clear-btn {
+        font-size: 12px;
+    }
+}
+
+/* Abdelrahman Alsayed ..  */
