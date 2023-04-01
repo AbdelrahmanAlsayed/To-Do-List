@@ -89,7 +89,7 @@ section .first {
     align-items: center;
     flex-direction: column;
     color: rgb(49, 36, 44);
-    height: 100%;
+    height: 96%;
 }
 
 section .first .box1 {
@@ -304,7 +304,7 @@ section .task-box span {
         height: calc(100vh - 130px);
     }
     section .first .box1 {
-        font-size: 22px;
+        font-size: 25px;
     }
     section .form .add {
         padding: 15px 5px;
