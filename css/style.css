@@ -95,6 +95,9 @@ section .first {
 section .first .box1 {
     font-size: 35px;
 }
+section .first .box1 h1 {
+    margin: 0;
+}
 
 section .last {
     display: flex;
